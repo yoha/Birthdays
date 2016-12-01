@@ -11,7 +11,8 @@
 		659C35B71DF038A8008A2EE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C35B61DF038A8008A2EE3 /* ViewController.swift */; };
 		659C35BC1DF038A8008A2EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659C35BB1DF038A8008A2EE3 /* Assets.xcassets */; };
 		659C35BF1DF038A8008A2EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659C35BD1DF038A8008A2EE3 /* LaunchScreen.storyboard */; };
-		659C35CA1DF038A8008A2EE3 /* BirthdaysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C35C91DF038A8008A2EE3 /* BirthdaysTests.swift */; };
+		659C35D51DF03C86008A2EE3 /* BirthdaysListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C35D41DF03C86008A2EE3 /* BirthdaysListViewControllerTests.swift */; };
+		659C35D71DF03E92008A2EE3 /* BirthdaysListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C35D61DF03E92008A2EE3 /* BirthdaysListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +33,9 @@
 		659C35BE1DF038A8008A2EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		659C35C01DF038A8008A2EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		659C35C51DF038A8008A2EE3 /* BirthdaysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirthdaysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		659C35C91DF038A8008A2EE3 /* BirthdaysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysTests.swift; sourceTree = "<group>"; };
 		659C35CB1DF038A8008A2EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659C35D41DF03C86008A2EE3 /* BirthdaysListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BirthdaysListViewControllerTests.swift; path = BirthdaysList/BirthdaysListViewControllerTests.swift; sourceTree = "<group>"; };
+		659C35D61DF03E92008A2EE3 /* BirthdaysListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BirthdaysListTableViewController.swift; path = BirthdaysList/BirthdaysListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				659C35BB1DF038A8008A2EE3 /* Assets.xcassets */,
 				659C35BD1DF038A8008A2EE3 /* LaunchScreen.storyboard */,
 				659C35C01DF038A8008A2EE3 /* Info.plist */,
+				659C35D61DF03E92008A2EE3 /* BirthdaysListTableViewController.swift */,
 			);
 			path = Birthdays;
 			sourceTree = "<group>";
@@ -87,8 +90,8 @@
 		659C35C81DF038A8008A2EE3 /* BirthdaysTests */ = {
 			isa = PBXGroup;
 			children = (
-				659C35C91DF038A8008A2EE3 /* BirthdaysTests.swift */,
 				659C35CB1DF038A8008A2EE3 /* Info.plist */,
+				659C35D41DF03C86008A2EE3 /* BirthdaysListViewControllerTests.swift */,
 			);
 			path = BirthdaysTests;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			files = (
 				659C35B71DF038A8008A2EE3 /* ViewController.swift in Sources */,
 				659C35B51DF038A8008A2EE3 /* AppDelegate.swift in Sources */,
+				659C35D71DF03E92008A2EE3 /* BirthdaysListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				659C35CA1DF038A8008A2EE3 /* BirthdaysTests.swift in Sources */,
+				659C35D51DF03C86008A2EE3 /* BirthdaysListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
