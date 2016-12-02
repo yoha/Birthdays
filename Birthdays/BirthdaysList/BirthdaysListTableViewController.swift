@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ContactsUI
 
 class BirthdaysListTableViewController: UITableViewController {
     
@@ -19,9 +20,29 @@ class BirthdaysListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.red
-        
         tableView.dataSource = dataProvider
         dataProvider?.registerCellsForTableView(tableView)
+        
+        let addBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(BirthdaysListTableViewController.addPerson))
+        navigationItem.rightBarButtonItem = addBarButtonItem
+    }
+    
+    // MARK: - Helper Methods
+    
+    func addPerson() {
+        let contactPickerViewController = CNContactPickerViewController()
+        contactPickerViewController.delegate = self
+        present(contactPickerViewController, animated: true, completion: nil)
+    }
+}
+
+// MARK: - CNContactPickerDelegate
+
+extension BirthdaysListTableViewController: CNContactPickerDelegate {
+    func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
+        if let birthdayIsSet = contact.birthday {
+            let contact = Birthday(firstName: contact.givenName, lastName: contact.familyName, birthday: birthdayIsSet)
+            print(contact)
+        }
     }
 }

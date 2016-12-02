@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let birthdaysListTableViewController = BirthdaysListTableViewController()
         birthdaysListTableViewController.dataProvider = BirthdaysListDataProvider()
-        window?.rootViewController = birthdaysListTableViewController
+        window?.rootViewController = UINavigationController(rootViewController: birthdaysListTableViewController)
         window?.makeKeyAndVisible()
         return true
     }

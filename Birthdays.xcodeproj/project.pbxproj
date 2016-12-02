@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652A026C1DF13DFA00A4B190 /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A026B1DF13DFA00A4B190 /* Birthday.swift */; };
 		659C35B51DF038A8008A2EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C35B41DF038A8008A2EE3 /* AppDelegate.swift */; };
 		659C35BC1DF038A8008A2EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659C35BB1DF038A8008A2EE3 /* Assets.xcassets */; };
 		659C35BF1DF038A8008A2EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659C35BD1DF038A8008A2EE3 /* LaunchScreen.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		652A026B1DF13DFA00A4B190 /* Birthday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Birthday.swift; path = Model/Birthday.swift; sourceTree = "<group>"; };
 		659C35B11DF038A8008A2EE3 /* Birthdays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birthdays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659C35B41DF038A8008A2EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		659C35BB1DF038A8008A2EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				659C35B41DF038A8008A2EE3 /* AppDelegate.swift */,
+				652A026B1DF13DFA00A4B190 /* Birthday.swift */,
 				659C35BB1DF038A8008A2EE3 /* Assets.xcassets */,
 				659C35BD1DF038A8008A2EE3 /* LaunchScreen.storyboard */,
 				659C35C01DF038A8008A2EE3 /* Info.plist */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652A026C1DF13DFA00A4B190 /* Birthday.swift in Sources */,
 				659C35B51DF038A8008A2EE3 /* AppDelegate.swift in Sources */,
 				659C35D71DF03E92008A2EE3 /* BirthdaysListTableViewController.swift in Sources */,
 				659C35DB1DF0413B008A2EE3 /* BirthdaysListDataProvider.swift in Sources */,
@@ -402,6 +406,7 @@
 				659C35D01DF038A8008A2EE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		659C35D11DF038A8008A2EE3 /* Build configuration list for PBXNativeTarget "BirthdaysTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +415,7 @@
 				659C35D31DF038A8008A2EE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
