@@ -12,22 +12,29 @@ class BirthdaysListDataProvider: NSObject {
     
     // MARK: - Stored Properties
     
+    fileprivate var birthdays = [Birthday]()
     fileprivate let cellID = "Reusable Cell"
     
     // MARK: - Helper Methods
     
     func registerCellsForTableView(_ tableView: UITableView) {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        tableView.register(BirthdayTableViewCell.self, forCellReuseIdentifier: cellID)
+    }
+    
+    func addBirthday(_ dob: Birthday) {
+        birthdays.append(dob)
     }
 }
 
 extension BirthdaysListDataProvider: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return birthdays.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
-        cell.textLabel?.text = "Row: \(indexPath.row)"
+        let birthday = birthdays[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! BirthdayTableViewCell
+        cell.nameLabel.text = birthday.firstName
+        cell.birthdayLabel.text = "\(birthday.birthday.day!) \(birthday.birthday.month!)"
         return cell
     }
 }

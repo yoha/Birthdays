@@ -42,7 +42,8 @@ extension BirthdaysListTableViewController: CNContactPickerDelegate {
     func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
         if let birthdayIsSet = contact.birthday {
             let contact = Birthday(firstName: contact.givenName, lastName: contact.familyName, birthday: birthdayIsSet)
-            print(contact)
+            dataProvider?.addBirthday(contact)
+            tableView.reloadData()
         }
     }
 }
