@@ -34,6 +34,7 @@ extension BirthdaysListDataProvider: UITableViewDataSource {
         let birthday = birthdays[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! BirthdayTableViewCell
         cell.nameLabel.text = birthday.firstName
+        cell.patternNameLabel.text = birthday.firstName
         cell.birthdayLabel.text = "\(birthday.birthday.day!) \(birthday.birthday.month!)"
         return cell
     }
